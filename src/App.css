@@ -1,5 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  background: azure;
 }
 
 .App-logo {
@@ -35,4 +46,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.input{
+  width: 400px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  color: rgba(99, 120, 139, 0.48);
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bolder;
+  margin: 20px auto;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.input[type=text]:focus{
+  border: transparent;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+::placeholder{
+  color: rgba(136, 165, 191, 0.48);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.user{
+  padding: 15px 0;
+  cursor: pointer;
+  margin: 5px 0;
+  width: auto;
+}
+
+.user:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  transition: 1s;
+}
+
+.para{
+  color: cadetblue;
+  font-weight: bold;
 }
